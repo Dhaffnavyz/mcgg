@@ -558,7 +558,7 @@ log: ".$_POST['dir']."/ngrok.log \n
 	// PaperMC
     } else if ($_POST['version'] == '1.16.4') {
 	copy('serverbase/paper-288.jar',$_POST['dir'].'/paper-188.jar');
-	}
+	
 	//	
 	} else if ($_POST['version'] == 'BC') {
 		copy('serverbase/BungeeCord.jar',$_POST['dir'].'/BungeeCord.jar');
