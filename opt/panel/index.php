@@ -39,7 +39,7 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 </noscript>
 <form class="modal form-horizontal" action="dashboard.php" method="post">
 	<div class="modal-header" align="center">
-		<h1><i class="fa fa-server" aria-hidden="true"></i> Minecraft<span style="color:gold">Control Panel</span></h1>
+		<h1><i class="fa fa-server" aria-hidden="true"></i> Minecraft<span style="color:gold"> Control Panel</span></h1>
 
 		<h3><?php $count=0; foreach(user_list() as $user) { $count++; } echo $count;?> server(s) running...</h3>
 	</div>
@@ -73,6 +73,12 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 		<button class="btn btn-primary" type="submit">Login</button>
 	</div>
 </form>
-<small class="muted pull-left" style="position:absolute;bottom:15px;left:15px;"> <br>Guest: <?=$_SERVER['REMOTE_ADDR'] ?> <br>Time: <?=date('d/m/Y') ?></small>
+<small class="muted pull-left" style="position:absolute;bottom:15px;left:15px;"> 
+<br>Guest: <?=$_SERVER['REMOTE_ADDR'] ?> 
+<br>Time: <?=date('d/m/Y') ?>     
+<br>By MindustryUser - forked from Ren232
+<br>MindustryUser is not affiliated with Mojang.
+<br>Minecraft (C) 2008-2020 Mojang AB.
+</small>
 	<script src="js/header.js"></script>
 </body>

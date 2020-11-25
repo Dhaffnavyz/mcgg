@@ -70,3 +70,5 @@ chmod +x $BUILD_DIR/uploader_second
 chmod 777 -R $BUILD_DIR/panel/
 chmod +x $BUILD_DIR/index.php
 
+echo "-----> Success... "
+

@@ -57,6 +57,7 @@ if(isset($_POST['key'])) {
 	<link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/TimeCircles.css" />
 	<style type="text/css">
+
         #DateCountdown {
             height:calc(100vh);
         }
@@ -70,6 +71,11 @@ if(isset($_POST['key'])) {
 		    display: none;
 		}
 	</style>
+	<!--Favicon-->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 	<script src="js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="js/TimeCircles.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -121,6 +127,9 @@ if(isset($_POST['key'])) {
 					$('#btn-srv-stop,#btn-srv-restart').prop('disabled', false);
 					$('#cmd').prop('disabled', false);
 					$('#ngrok_stat').text("<?=ngrok_stat($user['user'])?>");
+					//Set DNS
+					
+					//
 				} else {
 				    $('#DateCountdown').addClass('hidden');
 				    $('#DateCountdownTxt').text('Server Offline');
